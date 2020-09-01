@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+body {
+
+	font-family: 'Play',
+		sans-serif;
+	width: 100%;
+	height: calc(100vh - 40px);
+	text-align: center;
+
+	color: #243d44;
+	background-color: #466657;
+
+}
+
+h1 {
+
+	margin: 20px;
+	color: #17262b;
+}
+
+h3 {
+	font-size: 1.4em;
+	color: #17262b;
+}
+
+.top {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	line-height: 45px;
+}
+
+
+button {
+	font-size: 1.2em;
+
+	padding: 10px 20px;
+	color: #a4cfba;
+	background-color: #268b9c;
+
+	border-radius: 20px;
+	text-transform: capitalize;
+	cursor: pointer;
+
+	box-shadow: 2px 2px 5px #243d44;
+	transition: .3s ease;
+}
+
+button:hover {
+	color: #167a8b;
+	background-color: #a4cfba;
+}
+
+button:active {
+	box-shadow: inset 2px 2px 5px #243d44;
+
+}
+
+
+.mese {
+	width: 200px;
+
+}
+
+
+
+.days {
+	margin-top: 20px;
+	padding: 20px 10px;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(5, 100px);
+	column-gap: 2%;
+	row-gap: 2%;
+}
+
+.days p {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+
+	border-radius: 10px;
+	border: 2px solid #243d44;
+	background-color: #a4cfba;
+	box-shadow: 2px 2px 4px #243d44;
+}
+
+p span:first-child {
+	font-weight: bold;
+	font-size: 1.1em;
+	text-shadow: 1px 1px 1px #268b9c;
+}
+
+.holiday {
+
+	color: #4e4896;
+}
